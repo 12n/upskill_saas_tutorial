@@ -2,14 +2,20 @@
   <h3 class="text-center">Contact Us</h3>
   
   <%= form_for "/contacts" do |f| %>
-    <%= f.label :name %>
-    <%= f.text_field :name %>
+    <div class="form-group">
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+    </div>
     
-    <%= f.label :email %>
-    <%= f.text_field :email %>
+    <div class="form-group">
+      <%= f.label :email %>
+      <%= f.text_field :email %>
+    </div>
     
-    <%= f.label :comments %>
-    <%= f.text_field :comments %>
+    <div class="form-group">  
+      <%= f.label :comments %>
+      <%= f.text_area :comments %>
+    </div>
     
     <%= f.submit 'Submit' %>
   <% end %>
